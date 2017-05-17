@@ -1,4 +1,4 @@
-package pl.husar;
+package pl.husar.services;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -7,6 +7,8 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.stream.Stream;
 import javax.imageio.ImageIO;
+
+import pl.husar.settings.Settings;
 
 public class FileService {
 

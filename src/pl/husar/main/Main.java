@@ -1,4 +1,6 @@
-package pl.husar;
+package pl.husar.main;
+
+import pl.husar.services.ProcessingService;
 
 public class Main {
 
