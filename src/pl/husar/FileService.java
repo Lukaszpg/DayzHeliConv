@@ -12,7 +12,7 @@ public class FileService {
 
     public Stream<String> readDataFile() {
         try {
-            return Files.lines(Paths.get(Settings.dataFilePath));
+            return Files.lines(Paths.get(Settings.DATA_FILE_PATH));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -22,8 +22,8 @@ public class FileService {
 
     public void saveFile(BufferedImage image) {
         try {
-            File outputFile = new File(Settings.outputFilePath);
-            ImageIO.write(image, Settings.mapFileFormat, outputFile);
+            File outputFile = new File(Settings.OUTPUT_FILE_PATH);
+            ImageIO.write(image, Settings.MAP_FILE_FORMAT, outputFile);
         } catch (IOException e) {
             e.printStackTrace();
         }
